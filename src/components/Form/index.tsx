@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import { 
-    Text, 
-    TextInput, 
-    View, 
-    TouchableOpacity,
-    Vibration,
-    Keyboard,
-    Pressable} from 'react-native';
+import {
+  Text,
+  TextInput,
+  View,
+  TouchableOpacity,
+  Vibration,
+  Keyboard,
+  Pressable,
+} from 'react-native';
 import ResultImc from './ResultImc/';
 import styles from './style';
 
@@ -19,15 +20,15 @@ export default function Form() {
   const [errorMessage, setErrorMessage] = useState(null);
 
   function imcCalculator() {
-    const heightFormat = height.replace(',','.');
+    const heightFormat = height.replace(',', '.');
     const imc = (weight / (heightFormat * heightFormat)).toFixed(2);
     return setImc(imc);
   }
 
-  function verificationImc(){
-    if(imc == null){
-        Vibration.vibrate(10000);
-        setErrorMessage("campo obrigatório*");
+  function verificationImc() {
+    if (imc == null) {
+      Vibration.vibrate(10000);
+      setErrorMessage('campo obrigatório*');
     }
   }
 

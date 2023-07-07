@@ -2,10 +2,10 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   formContext: {
-    flex:1,
+    flex: 1,
     backgroundColor: '#ffffff',
     alignItems: 'center',
-    paddingTop:30,
+    paddingTop: 30,
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
   },
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     color: 'red',
     fontWeight: 'bold',
     paddingLeft: 20,
-  }
+  },
 });
 
 export default styles;
